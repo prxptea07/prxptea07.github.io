@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Noodle Timer 🍜</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="timer-container">
+    <h1>Noodle Timer 🍜</h1>
+    <img src="noodles.png" alt="Cute noodles" class="noodle-img" />
+
+    <div class="buttons">
+      <button onclick="startTimer(180)">Soft (3 min)</button>
+      <button onclick="startTimer(300)">Medium (5 min)</button>
+      <button onclick="startTimer(420)">Hard (7 min)</button>
+    </div>
+
+    <div id="display">00:00</div>
+    <audio id="ding" src="beep.wav" preload="auto"></audio>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
