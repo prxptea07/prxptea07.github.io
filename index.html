@@ -9,17 +9,26 @@
 <body>
   <div class="timer-container">
     <h1>Noodle Timer 🍜</h1>
-    <img src="https://i.imgur.com/oqV8kXI.png" alt="Cute noodles" class="noodle-img" />
 
-   <div class="buttons">
-  <button onclick="startTimer(180)">Firm (3 min)</button>
-  <button onclick="startTimer(360)">Soft (6 min)</button>
-  <button onclick="startTimer(600)">Mushy (10 min)</button>
-</div>
+    <div class="steam-container">
+      <img src="https://i.imgur.com/7H5TgMf.png" alt="Cute noodles" class="noodle-img" />
+      <div class="steam steam1">☁️</div>
+      <div class="steam steam2">☁️</div>
+      <div class="steam steam3">☁️</div>
+    </div>
+
+    <div class="buttons">
+      <button onclick="startTimer(180)">Firm (3 min) 🥢</button>
+      <button onclick="startTimer(300)">Soft (5 min) 🍥</button>
+      <button onclick="startTimer(420)">Mushy (7 min) 🍜</button>
+    </div>
 
     <div id="display">00:00</div>
+    <div class="progress-bar-bg"><div id="progress-bar"></div></div>
+
     <audio id="ding" src="beep.wav" preload="auto"></audio>
   </div>
   <script src="script.js"></script>
 </body>
 </html>
+
